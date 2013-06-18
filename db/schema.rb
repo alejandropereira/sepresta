@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130613174244) do
+ActiveRecord::Schema.define(:version => 20130618233440) do
 
   create_table "forms", :force => true do |t|
     t.string   "codigo"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20130613174244) do
     t.string   "dp_solicitante_nombre"
     t.text     "dp_no_dueno"
     t.boolean  "cs_potable"
+    t.string   "cs_potable_tipo"
     t.boolean  "cs_electricidad"
     t.boolean  "cs_drenajes"
     t.boolean  "cs_lineas_telefonicas"
@@ -86,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20130613174244) do
     t.string   "cc_construccion_proceso"
     t.string   "cc_contruccion_tiempo"
     t.string   "cc_estructura"
+    t.string   "cc_estructura_otra"
     t.string   "cc_estructura_mts"
     t.string   "cc_acabados_muros"
     t.string   "cc_techos"

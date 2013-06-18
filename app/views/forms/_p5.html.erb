@@ -77,49 +77,117 @@
   <div class="field">
     <h3>Títulos de servicios:</h3>
     <div class="field doble radio-field">
-      <%= f.label :ap_ingreso_carro, "¿Energía eléctrica?" %>
+      <%= f.label :ut_electricidad, "¿Energía eléctrica?" %>
       <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+        <%= f.radio_button :ut_electricidad, 'si', :class => "inline" %>
+        <%= f.label :ut_electricidad_si, raw("Si <span></span>") %>
       </div>
       <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
-      </div>
-    </div>
-    <div class="field doble radio-field">
-      <%= f.label :ap_ingreso_carro, "¿Agua potable?" %>
-      <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
-      </div>
-      <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+        <%= f.radio_button :ut_electricidad, 'no', :class => "inline" %>
+        <%= f.label :ut_electricidad_no, raw("No <span></span>") %>
       </div>
     </div>
     <div class="field doble radio-field">
-      <%= f.label :ap_ingreso_carro, "¿Línea telefónica?" %>
+      <%= f.label :ut_potable, "¿Agua potable?" %>
       <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+        <%= f.radio_button :ut_potable, 'si', :class => "inline" %>
+        <%= f.label :ut_potable_si, raw("Si <span></span>") %>
       </div>
       <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+        <%= f.radio_button :ut_potable, 'no', :class => "inline" %>
+        <%= f.label :ut_potable_no, raw("No <span></span>") %>
       </div>
     </div>
     <div class="field doble radio-field">
-      <%= f.label :ap_ingreso_carro, "¿Drenaje colectivo?" %>
+      <%= f.label :ut_lineas_telefonicas, "¿Línea telefónica?" %>
       <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+        <%= f.radio_button :ut_lineas_telefonicas, 'si', :class => "inline" %>
+        <%= f.label :ut_lineas_telefonicas_si, raw("Si <span></span>") %>
       </div>
       <div class="radio">
-        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
-        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+        <%= f.radio_button :ut_lineas_telefonicas, 'no', :class => "inline" %>
+        <%= f.label :ut_lineas_telefonicas_no, raw("No <span></span>") %>
       </div>
     </div>
+    <div class="field doble radio-field">
+      <%= f.label :ut_drenaje, "¿Drenaje colectivo?" %>
+      <div class="radio">
+        <%= f.radio_button :ut_drenaje, 'si', :class => "inline" %>
+        <%= f.label :ut_drenaje_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ut_drenaje, 'no', :class => "inline" %>
+        <%= f.label :ut_drenaje_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ut_fosa, "¿Fosa séptica?" %>
+      <div class="radio">
+        <%= f.radio_button :ut_fosa, 'si', :class => "inline" %>
+        <%= f.label :ut_fosa_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ut_fosa, 'no', :class => "inline" %>
+        <%= f.label :ut_fosa_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ut_internet, "¿Internet?" %>
+      <div class="radio">
+        <%= f.radio_button :ut_internet, 'si', :class => "inline" %>
+        <%= f.label :ut_internet_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ut_internet, 'no', :class => "inline" %>
+        <%= f.label :ut_internet_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ut_cable, "¿Cable?" %>
+      <div class="radio">
+        <%= f.radio_button :ut_cable, 'si', :class => "inline" %>
+        <%= f.label :ut_cable_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ut_cable, 'no', :class => "inline" %>
+        <%= f.label :ut_cable_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ut_otro_uso, "¿Otro uso?" %>
+      <div class="radio">
+        <%= f.radio_button :ut_otro_uso, 'si', :class => "inline" %>
+        <%= f.label :ut_otro_uso_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ut_otro_uso, 'no', :class => "inline" %>
+        <%= f.label :ut_otro_uso_no, raw("No <span></span>") %>
+      </div>
+    </div>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:ut_contador_luz, "Contador de Luz No.") %>
+    <%= f.text_field :ut_contador_luz, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:ut_telefono, "Teléfono No.") %>
+    <%= f.text_field :ut_telefono, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= label_tag(:ut_contador_agua, "Contador de Agua o Titulo de derecho No.") %>
+    <%= f.text_field :ut_contador_agua, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :ut_no_luz, "¿Porqué no tiene servicio de agua o luz?" %>
+    <%= f.text_field :ut_no_luz, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :ut_servicios, "¿Sí tienen, de dónde provienen los servicios básicos?" %>
+    <%= f.text_field :ut_servicios, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :ut_otros, "Otros:" %>
+    <%= f.text_field :ut_otros, :class => "full" %>
   </div>
 
 </fieldset>

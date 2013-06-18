@@ -1,0 +1,184 @@
+<fieldset id="p6">
+  <h1>Características <br> de la construcción</h1>
+  <hr>
+
+  <div class="field">
+    <%= f.label :cc_area_mts, raw("El área de contrucción tiene una extensión de: (mts<span class='super'>2</span>)") %>
+    <%= f.text_field :cc_area_mts, :class => "full" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cc_construccion_proceso, raw("Si la construcción esta en proceso, que porcentaje esta terminado:") %>
+    <%= f.text_field :cc_construccion_proceso, :class => "full" %>
+  </div>
+  <div class="field single">
+    <%= f.label :cc_contruccion_tiempo, "Cuanto Falta:" %>
+    <%= f.text_field :cc_contruccion_tiempo, :class => "inline" %>
+  </div>
+  <h3 class="center">ESTRUCTURA</h3>
+  <div class="field triple inline">
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'terraza/block', :class => "inline" %>
+      <%= f.label :cc_estructura_terrazablock, raw("Terraza-Block: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'terraza/concreto', :class => "inline" %>
+      <%= f.label :cc_estructura_terrazaconcreto, raw("Terraza-Concreto <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'terraza/ladrillo', :class => "inline" %>
+      <%= f.label :cc_estructura_terrazaladrillo, raw("Terraza-Ladrillo: <span></span>") %>
+    </div>
+  </div>
+  <div class="field triple inline">
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'duralita/block', :class => "inline" %>
+      <%= f.label :cc_estructura_duralitablock, raw("Duralita-Block: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'duralita/concreto', :class => "inline" %>
+      <%= f.label :cc_estructura_duralitaconcreto, raw("Duralita-Concreto: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'duralita/ladrillo', :class => "inline" %>
+      <%= f.label :cc_estructura_duralitaladrillo, raw("Duralita-Ladrillo: <span></span>") %>
+    </div>
+  </div>
+  <div class="field triple inline last">
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'lamina/block', :class => "inline" %>
+      <%= f.label :cc_estructura_laminablock, raw("Lámina-Block: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'lamina/concreto', :class => "inline" %>
+      <%= f.label :cc_estructura_laminaconcreto, raw("Lámina-Concreto: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cc_estructura, 'lamina/ladrillo', :class => "inline" %>
+      <%= f.label :cc_estructura_laminaladrillo, raw("Lámina-Ladrillo: <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:cc_estructura_otra, "Otra clase de construcción:") %>
+    <%= f.text_field :cc_estructura_otra, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:cc_estructura_mts, raw("Mts<span class='super'>2</span> de construcción")) %>
+    <%= f.text_field :cc_estructura_mts, :class => "inline" %>
+  </div>
+  <div class="field triple inline">
+    <h3>Acabados de Muros</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+  <div class="field triple inline">
+    <h3>Techos</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+  <div class="field triple inline last">
+    <h3>Muros</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+  <div class="field triple inline">
+    <h3>Ventanería</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+  <div class="field triple inline">
+    <h3>Pisos</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+  <div class="field triple inline last">
+    <h3>Puertas</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+
+</fieldset>
