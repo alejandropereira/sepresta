@@ -1,0 +1,38 @@
+<fieldset id="p3">
+  <h1>Acceso a la  <br> propiedad</h1>
+  <hr>
+
+  <div class="field">
+    <%= f.label :ap_accesso, "Comentarios si los servicios son Comunitarios:" %>
+    <%= f.text_area :ap_accesso, :class => "full" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ap_calle_conocida, "Nombre de la Calz. o Calle más conocida y qué distancia:" %>
+    <%= f.text_field :ap_calle_conocida, :class => 'full' %>
+    <span class="hint center">(Desde ese punto a la propiedad)</span>
+  </div>
+
+  <div class="field">
+    <%= f.label :ap_calzada, "Nombre de la Calz. o Avenida inmediata:" %>
+    <%= f.text_field :ap_calzada, :class => 'full' %>
+    <span class="hint center">(sobre la cual se sitúa la propiedad)</span>
+  </div>
+  <div class="field single">
+    <%= f.label :ap_km_calzada, "Kms. de la Calz. más conocida a la propiedad:" %>
+    <%= f.text_field :ap_km_calzada, :class => "full" %>
+    <span class="hint">*Distancia donde se toma transporte colectivo</span>
+  </div>
+  <div class="field radio-field">
+    <%= f.label :ap_ingreso_carro, "¿Entra vehículo hasta la propiedad?" %>
+    <div class="radio">
+      <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
+      <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
+      <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+    </div>
+  </div>
+  
+</fieldset>

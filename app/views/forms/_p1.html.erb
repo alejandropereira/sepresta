@@ -1,0 +1,105 @@
+<fieldset id="p1">
+  <h1>Datos <br> Personales</h1>
+  <hr>
+
+  <div class="field">
+    <%= f.label :dp_nombre, "Nombre del Propietario:" %>
+    <%= f.text_field :dp_nombre, :class => "full" %>
+    <span class="hint">*Como aparece en la cédula o DPI</span>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:dp_dpi, "Cédula o DPI:") %>
+    <%= f.text_field :dp_dpi, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:dp_extendida, "Extendida en:") %>
+    <%= f.text_field :dp_extendida, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:dp_edad, "Edad:") %>
+    <%= f.text_field :dp_edad, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:dp_profesion, "Profesión u Oficio:") %>
+    <%= f.text_field :dp_profesion, :class => "inline" %>
+  </div>
+  <div class="field radio-field">
+    <%= label_tag(:dp_estado_civil, "Estado Civil:") %>
+    <div class="radio">
+      <%= f.radio_button :dp_estado_civil, 'casado', :class => "inline" %>
+      <%= f.label :dp_estado_civil_casado, raw("Casado(a) <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :dp_estado_civil, 'soltero', :class => "inline" %>
+      <%= f.label :dp_estado_civil_soltero, raw("Soltero(a) <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :dp_estado_civil, 'divorciado', :class => "inline" %>
+      <%= f.label :dp_estado_civil_divorciado, raw("Divorciado(a) <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :dp_estado_civil, 'viudo', :class => "inline" %>
+      <%= f.label :dp_estado_civil_viudo, raw("Viudo(a) <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :dp_estado_civil, 'unido', :class => "inline" %>
+      <%= f.label :dp_estado_civil_unido, raw("Unido(a) <span></span>") %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :dp_direccion, "Domicilio Actual:" %>
+    <%= f.text_field :dp_direccion, :class => "full" %>
+  </div>
+  <div class="field single">
+    <%= f.label :dp_telefono, "Teléfono:" %>
+    <%= f.text_field :dp_telefono, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= f.label :dp_empresa, "Lugar de trabajo:" %>
+    <%= f.text_field :dp_empresa, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= f.label :dp_empresa_direccion, "Dirección de trabajo:" %>
+    <%= f.text_field :dp_empresa_direccion, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= f.label :dp_empresa_rubro, "A que se dedica la empresa:" %>
+    <%= f.text_field :dp_empresa_rubro, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= f.label :dp_empresa_telefono, "Teléfono:" %>
+    <%= f.text_field :dp_empresa_telefono, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= f.label :dp_empresa_cargo, "Cargo que desempeña:" %>
+    <%= f.text_field :dp_empresa_cargo, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= f.label :dp_empresa_salario, "Sueldo:" %>
+    <%= f.text_field :dp_empresa_salario, :class => "inline" %>
+  </div>
+  <div class="field single">
+    <%= f.label :dp_monto, "Cantidad Solicitada:" %>
+    <%= f.text_field :dp_monto, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= f.label :dp_razon_prestamo, "Para que necesita el prestamo:" %>
+    <%= f.text_field :dp_razon_prestamo, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= f.label :dp_email, "Email:" %>
+    <%= f.text_field :dp_email, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= f.label :dp_nit, "NIT:" %>
+    <%= f.text_field :dp_nit, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= f.label :dp_solicitante_nombre, "Nombre del Solicitante:" %>
+    <%= f.text_field :dp_solicitante_nombre, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :dp_no_dueno, "Sí no es el propietario, que relación tiene con estos:" %>
+    <%= f.text_area :dp_no_dueno, :class => "full" %>
+  </div>
+</fieldset>

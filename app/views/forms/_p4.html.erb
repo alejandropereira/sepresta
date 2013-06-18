@@ -1,0 +1,48 @@
+<fieldset id="p4">
+  <h1>Características  <br> de la propiedad</h1>
+  <hr>
+
+  <div class="field">
+    <%= f.label :cp_direccion, "Dirección exácta de la propiedad a evaluar:" %>
+    <%= f.text_field :cp_direccion, :class => "full" %>
+    <span class="hint center">MUY IMPORTANTE, verificar la nomenclatura de las vecindades para ver que coincida)</span>
+  </div>
+
+  <div class="field doble">
+    <%= label_tag(:cp_finca, "Finca#") %>
+    <%= f.text_field :cp_finca, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:cp_folio, "Folio#") %>
+    <%= f.text_field :cp_folio, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:cp_libro, "Libro#") %>
+    <%= f.text_field :cp_libro, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:cp_de, "De") %>
+    <%= f.text_field :cp_de, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:cp_aregistrada_mts, raw("Área Registrada (mts<span class='super'>2</span>)")) %>
+    <%= f.text_field :cp_aregistrada_mts, :class => "inline" %>
+    <span class="hint">(Como aparece en el registro de la propiedad)</span>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:cp_aregistrada_vrs, raw("Área Registrada (vrs<span class='super'>2</span>)")) %>
+    <%= f.text_field :cp_aregistrada_vrs, :class => "inline" %>
+    <span class="hint">(Como aparece en el registro de la propiedad)</span>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:cp_amedida_mts, raw("Área Medida (mts<span class='super'>2</span>)")) %>
+    <%= f.text_field :cp_amedida_mts, :class => "inline" %>
+    <span class="hint">(Medida por el valuador de la propiedad)</span>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:cp_amedida_vrs, raw("Área Medida (vrs<span class='super'>2</span>)")) %>
+    <%= f.text_field :cp_amedida_vrs, :class => "inline" %>
+    <span class="hint">(Medida por el valuador de la propiedad)</span>
+  </div>
+  
+</fieldset>

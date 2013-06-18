@@ -1,0 +1,125 @@
+<fieldset id="p5">
+  <h1>Utilización <br> del terreno</h1>
+  <hr>
+
+  <div class="field doble">
+    <h3>Casa de:</h3>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'un nivel', :class => "inline" %>
+      <%= f.label :ut_casa_de_un_nivel, raw("Un Nivel: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'dos niveles', :class => "inline" %>
+      <%= f.label :ut_casa_de_dos_niveles, raw("Dos Niveles: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'tres niveles', :class => "inline" %>
+      <%= f.label :ut_casa_de_tres_niveles, raw("Tres Niveles: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'cuatro niveles', :class => "inline" %>
+      <%= f.label :ut_casa_de_cuatro_niveles, raw("Cuatro Niveles: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'oficina/local', :class => "inline" %>
+      <%= f.label :ut_casa_de_oficinalocal, raw("Oficina / Local: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'terreno valdio', :class => "inline" %>
+      <%= f.label :ut_casa_de_terreno_valdio, raw("Terreno Valdío: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'apartamento', :class => "inline" %>
+      <%= f.label :ut_casa_de_apartamento, raw("Apartamento: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_casa_de, 'otro uso', :class => "inline" %>
+      <%= f.label :ut_casa_de_otro_uso, raw("Otro Uso: <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble last">
+    <h3>Forma:</h3>
+    <div class="radio">
+      <%= f.radio_button :ut_forma, 'rectangular', :class => "inline" %>
+      <%= f.label :ut_forma_rectangular, raw("Rectagular: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_forma, 'cuadrada', :class => "inline" %>
+      <%= f.label :ut_forma_cuadrada, raw("Cuadrada: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_forma, 'triangular', :class => "inline" %>
+      <%= f.label :ut_forma_triangular, raw("Triangular: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_forma, 'quebrada', :class => "inline" %>
+      <%= f.label :ut_forma_quebrada, raw("Quebrada: <span></span>") %>
+    </div>
+    <div class="clear"></div>
+    <h3>Topografía:</h3>
+    <div class="radio">
+      <%= f.radio_button :ut_topografia, 'plana', :class => "inline" %>
+      <%= f.label :ut_topografia_plana, raw("Plana: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_topografia, 'inclinada', :class => "inline" %>
+      <%= f.label :ut_topografia_inclinada, raw("Inclinada: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ut_topografia, 'quebrada', :class => "inline" %>
+      <%= f.label :ut_topografia_quebrada, raw("Quebrada: <span></span>") %>
+    </div>
+    <%= f.label :ut_inclinacion, 'Grado de inclinación' %>
+    <%= f.text_field :ut_inclinacion, :class => "inline" %>
+
+  </div>
+
+  <div class="field">
+    <h3>Títulos de servicios:</h3>
+    <div class="field doble radio-field">
+      <%= f.label :ap_ingreso_carro, "¿Energía eléctrica?" %>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ap_ingreso_carro, "¿Agua potable?" %>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ap_ingreso_carro, "¿Línea telefónica?" %>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+      </div>
+    </div>
+    <div class="field doble radio-field">
+      <%= f.label :ap_ingreso_carro, "¿Drenaje colectivo?" %>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+      </div>
+      <div class="radio">
+        <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
+        <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+      </div>
+    </div>
+  </div>
+
+</fieldset>

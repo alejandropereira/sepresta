@@ -1,0 +1,93 @@
+<fieldset id="p2">
+  <h1>Características <br> del Sector</h1>
+  <hr>
+
+  <div class="field triple inline">
+    <div class="checkbox">
+      <%= f.check_box :cs_potable %>
+      <%= f.label :cs_potable, raw("Agua potable: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_electricidad %>
+      <%= f.label :cs_electricidad, raw("Luz eléctrica: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_drenajes %>
+      <%= f.label :cs_drenajes, raw("Drenajes: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_lineas_telefonicas %>
+      <%= f.label :cs_lineas_telefonicas, raw("Líneas telefónicas: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_transporte %>
+      <%= f.label :cs_transporte, raw("Transporte público: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_cable %>
+      <%= f.label :cs_cable, raw("Cable: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_internet %>
+      <%= f.label :cs_internet, raw("Internet: <span></span>") %>
+    </div>
+    <div class="checkbox">
+      <%= f.check_box :cs_area_comercial %>
+      <%= f.label :cs_area_comercial, raw("Área Comercial: <span></span>") %>
+    </div>
+  </div>
+  <div class="field triple inline">
+    <h3>Tipo de acceso</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_tipo_acceso, 'calle amplia', :class => "inline" %>
+      <%= f.label :cs_tipo_acceso_calle_amplia, raw("Calle amplia: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_tipo_acceso, 'boulevard', :class => "inline" %>
+      <%= f.label :cs_tipo_acceso_boulevard, raw("Boulevard: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_tipo_acceso, 'callejon', :class => "inline" %>
+      <%= f.label :cs_tipo_acceso_callejon, raw("Callejón: <span></span>") %>
+    </div>
+    <hr>
+    <h3>Estado de camino</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estado_camino, 'bueno', :class => "inline" %>
+      <%= f.label :cs_estado_camino_bueno, raw("Bueno: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estado_camino, 'regular', :class => "inline" %>
+      <%= f.label :cs_estado_camino_regular, raw("Regular: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estado_camino, 'malo', :class => "inline" %>
+      <%= f.label :cs_estado_camino_malo, raw("Malo: <span></span>") %>
+    </div>
+  </div>
+  <div class="field triple inline last">
+    <h3>Estructura de Calles</h3>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'asfalto', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_asfalto, raw("Asfalto: <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'adoquin', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_adoquin, raw("Adoquín: <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'pavimento', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_pavimento, raw("Pavimento: <span></span>") %>
+    </div> 
+    <div class="radio">
+      <%= f.radio_button :cs_estructura_calles, 'terraceria', :class => "inline" %>
+      <%= f.label :cs_estructura_calles_terraceria, raw("Terraceria: <span></span>") %>
+    </div>    
+  </div>
+
+  <div class="field">
+    <%= label_tag(:cs_comentarios, "Comentarios si los servicios son Comunitarios:") %>
+    <%= f.text_area :cs_comentarios, :class => "full" %>
+  </div>
+  
+</fieldset>

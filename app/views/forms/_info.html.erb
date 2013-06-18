@@ -1,0 +1,19 @@
+<div class="info">
+  <span class="code">No. <%= f.text_field :codigo %></span>
+  <div class="field">
+    <%= label_tag(:monto_aprobado, "Monto aprobado:") %>
+
+    <span class="addon">Q.</span><%= f.text_field :monto_aprobado %>
+    <i>P</i>                
+  </div>
+  <div class="field">
+    <%= label_tag(:interes, "Tasa de interes:") %>
+    <%= f.text_field :interes, :class => "align-right" %><span class="addon">%</span>
+    <i>M</i>                
+  </div>
+  <div class="field">
+    <%= f.check_box :hipoteca_embargo %>
+    <%= f.label :hipoteca_embargo, raw("Tiene hipotecas o embargos: <span></span>") %>
+    <span class="hint">Detalle ver hoja de informe legal.</span>                
+  </div>
+</div>
