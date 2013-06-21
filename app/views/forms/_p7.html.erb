@@ -1,0 +1,116 @@
+<fieldset id="p7">
+  <h1>¿Quién habita <br> en la propiedad?</h1>
+  <hr>
+  <h3 class="center">DATOS PERSONALES</h3>
+  <div class="field">
+    <%= f.label :hp_nombre_completo, "Nombre Completo:" %>
+    <%= f.text_field :hp_nombre_completo, :class => "full" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:hp_papellido, "1er apellido:") %>
+    <%= f.text_field :hp_papellido, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:hp_sapellido, "2do apellido:") %>
+    <%= f.text_field :hp_sapellido, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= label_tag(:hp_nombres, "Nombres:") %>
+    <%= f.text_field :hp_nombres, :class => "full" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:hp_apellido_casada, "Apellido de casada:") %>
+    <%= f.text_field :hp_apellido_casada, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:hp_nacionalidad, "Nacionalidad:") %>
+    <%= f.text_field :hp_nacionalidad, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= label_tag(:hp_residencia, "Residencia:") %>
+    <%= f.text_field :hp_residencia, :class => "full" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:hp_telefono, "Teléfono:") %>
+    <%= f.text_field :hp_telefono, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:hp_edad, "Edad:") %>
+    <%= f.text_field :hp_edad, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:hp_estado_civil, "Estado Civil:") %>
+    <%= f.text_field :hp_estado_civil, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= label_tag(:hp_direccion_notificaciones, "Dirección para recibir Notificaciones:") %>
+    <%= f.text_field :hp_direccion_notificaciones, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= label_tag(:hp_propiedad_valor, "Propiedad en Garantia: ¿En Cuanto estima su valor?") %>
+    <%= f.text_field :hp_propiedad_valor, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= label_tag(:hp_propiedad_porque, "¿Porqué?") %>
+    <%= f.text_field :hp_propiedad_porque, :class => "full" %>
+  </div>
+  <h3>Tipo de Vivienda:</h3>
+  <div class="radio-field">
+    <div class="radio">
+      <%= f.radio_button :hp_tipo_vivienda, 'amortizandola', :class => "inline" %>
+      <%= f.label :hp_tipo_vivienda_amortizandola, raw("Amortizandola <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :hp_tipo_vivienda, 'alquilada', :class => "inline" %>
+      <%= f.label :hp_tipo_vivienda_alquilada, raw("Alquilada <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :hp_tipo_vivienda, 'familia', :class => "inline" %>
+      <%= f.label :hp_tipo_vivienda_familia, raw("Familia <span></span>") %>
+    </div>  
+    <div class="radio">
+      <%= f.radio_button :hp_tipo_vivienda, 'propia', :class => "inline" %>
+      <%= f.label :hp_tipo_vivienda_propia, raw("Propia <span></span>") %>
+    </div>
+  </div>
+  <h3>Si la vivienda es propia indicar:</h3>
+  <div class="field doble">
+    <%= label_tag(:hp_finca, "Finca#") %>
+    <%= f.text_field :hp_finca, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:hp_folio, "Folio#") %>
+    <%= f.text_field :hp_folio, :class => "inline" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:hp_libro, "Libro#") %>
+    <%= f.text_field :hp_libro, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:hp_numero_de, "De") %>
+    <%= f.text_field :hp_numero_de, :class => "inline" %>
+  </div>
+  <div class="field single">
+    <%= f.label :hp_valor, "Valor:" %>
+    <%= f.text_field :hp_valor, :class => "inline" %>
+  </div>
+  <div class="field radio-field">
+    <%= f.label :hp_vehiculos, "¿Posee Vehiculos?" %>
+    <div class="radio">
+      <%= f.radio_button :hp_vehiculos, 'si', :class => "inline" %>
+      <%= f.label :hp_vehiculos_si, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :hp_vehiculos, 'no', :class => "inline" %>
+      <%= f.label :hp_vehiculos_no, raw("No <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :hp_vehiculos, 'amortizandola', :class => "inline" %>
+      <%= f.label :hp_vehiculos_amortizandola, raw("Amortizandola <span></span>") %>
+    </div>
+  </div>
+  <div class="field single">
+    <%= f.label :hp_vehiculos_marca, "Marca:" %>
+    <%= f.text_field :hp_vehiculos_marca, :class => "inline" %>
+  </div>
+</fieldset>

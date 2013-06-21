@@ -1,6 +1,85 @@
-<h1>Editing form</h1>
+  <div class="container">
+    <div id="content">      
+        <ul class="tabs">
+          <li class="small current"><a href="#form">Formulario <i class="icon-new"></i></a></li>
+          <li class="small"><a href="#recent">Recientes <i class="icon-recent"></i></a></li>
+        </ul>
+        <div id="form" class="tab">
+          <%= form_for(@form) do |f| %>
+          <aside id="sidebar" class="sidebar">
+            <%= render 'info', :f => f %>
+            <ul>
+              <li>
+                <a href="#p1"><i class="icon-user"></i>Datos Personales</a>
+              </li>
+              <li>
+                <a href="#p2"><i class="icon-sector"></i>Características del Sector</a>
+              </li>
+              <li>
+                <a href="#p3"><i class="icon-access"></i>Acceso de Propiedad</a>
+              </li>
+              <li>
+                <a href="#p4"><i class="icon-house"></i>Características de la Propiedad</a>
+              </li>
+              <li>
+                <a href="#p5"><i class="icon-flag"></i>Utilización del terreno</a>
+              </li>
+              <li>
+                <a href="#p6"><i class="icon-construct"></i>Características de la construcción</a>
+              </li>
+              <li>
+                <a href="#p7"><i class="icon-people"></i>¿Quién habita en la Propiedad?</a>
+              </li>
+              <li>
+                <a href="#p8"><i class="icon-paper"></i>Información Legal Adicional</a>
+              </li>
+            </ul>
+          </aside>
+          <section id="main-content" class="content">
+            <div class="group-btns">
+              <button class="prev"><i></i>Anterior</button>
+              <button class="next">Siguiente<i></i></button>
+            </div>
+            <hr>
+            <%= render 'form', :f => f %>
+          </section>
+          <% end %>
+        </div>
+        <div id="recent" class="tab">
+          <aside class="sidebar">
+            <ul>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+            </ul>
+          </aside>
+          <div class="content">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Número de cliente</th>
+                  <th>Detalles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @forms.each do |form| %>
+                  <tr>
+                    <td><%= form.dp_solicitante_nombre %></td>
+                    <td><%= form.codigo %></td>
+                    <td>
+                      <div class="btns">
+                        <%= link_to "Detalles", edit_form_path(form), :class => 'btn' %>
+                        <%= link_to "Borrar", form_path(form), :method => :delete, :confirm => "Esta seguro que desea eliminar este formulario?", :class => 'btn btn-error' %>
+                      </div>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>           
+          </div>
+        </div>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @form %> |
-<%= link_to 'Back', forms_path %>
+     </div>
+  </div>

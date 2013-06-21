@@ -41,18 +41,45 @@
               <button class="next">Siguiente<i></i></button>
             </div>
             <hr>
-            <%= render 'p1', :f => f %>
-            <%= render 'p2', :f => f %>
-            <%= render 'p3', :f => f %>
-            <%= render 'p4', :f => f %>
-            <%= render 'p5', :f => f %>
-            <%= render 'p6', :f => f %>
+            <%= render 'form', :f => f %>
           </section>
           <% end %>
         </div>
 
         <div id="recent" class="tab">
-          fafdadaso
+          <aside class="sidebar">
+            <ul>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+              <li><a href="#">Hace 1 Mes</a></li>
+            </ul>
+          </aside>
+          <div class="content">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Número de cliente</th>
+                  <th>Detalles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @forms.each do |form| %>
+                  <tr>
+                    <td><%= form.dp_solicitante_nombre %></td>
+                    <td><%= form.codigo %></td>
+                    <td>
+                      <div class="btns">
+                        <%= link_to "Detalles", edit_form_path(form), :class => 'btn' %>
+                        <%= link_to "Borrar", form_path(form), :method => :delete, :confirm => "Esta seguro que desea eliminar este formulario?", :class => 'btn btn-error' %>
+                      </div>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>           
+          </div>
         </div>
 
      </div>

@@ -26,12 +26,12 @@
   <div class="field radio-field">
     <%= f.label :ap_ingreso_carro, "¿Entra vehículo hasta la propiedad?" %>
     <div class="radio">
-      <%= f.radio_button :ap_ingreso_carro, 'si', :class => "inline" %>
-      <%= f.label :ap_ingreso_carro_si, raw("Si <span></span>") %>
+      <%= f.radio_button :ap_ingreso_carro, true, :class => "inline" %>
+      <%= f.label :ap_ingreso_carro_true, raw("Si <span></span>") %>
     </div>
     <div class="radio">
-      <%= f.radio_button :ap_ingreso_carro, 'no', :class => "inline" %>
-      <%= f.label :ap_ingreso_carro_no, raw("No <span></span>") %>
+      <%= f.radio_button :ap_ingreso_carro, false, :class => "inline" %>
+      <%= f.label :ap_ingreso_carro_false, raw("No <span></span>") %>
     </div>
   </div>
   

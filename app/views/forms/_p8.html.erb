@@ -1,0 +1,114 @@
+<fieldset id="p8">
+  <h1>Información Legal <br> Adicional</h1>
+  <hr>
+
+  <div class="field radio-field">
+    <%= f.label :ia_hipoteca, "Hipoteca:" %>
+    <div class="radio">
+      <%= f.radio_button :ia_hipoteca, true, :class => "inline" %>
+      <%= f.label :ia_hipoteca_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ia_hipoteca, false, :class => "inline" %>
+      <%= f.label :ia_hipoteca_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :ai_acreedor_nombre, "Nombre del Acreedor:" %>
+    <%= f.text_field :ai_acreedor_nombre, :class => "full" %>
+  </div>
+  <div class="field doble">
+    <%= label_tag(:ai_acreedor_telefono, "Teléfono:") %>
+    <%= f.text_field :ai_acreedor_telefono, :class => "inline" %>
+  </div>
+  <div class="field doble last">
+    <%= label_tag(:ai_acreedor_interes, "Tasa de Interés:") %>
+    <%= f.text_field :ai_acreedor_interes, :class => "inline" %>
+  </div>
+  <div class="field">
+    <%= f.label :ai_acreedor_direccion, "Dirección donde efectúa los pagos:" %>
+    <%= f.text_field :ai_acreedor_direccion, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :ai_acreedor_estado, "Estado de Cuenta (Atrasos, Ampliaciones, etc):" %>
+    <%= f.text_area :ai_acreedor_estado, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :ai_persona_encargada, "Nombre de la persona encargada de dar información:" %>
+    <%= f.text_field :ai_persona_encargada, :class => "full" %>
+  </div>
+  <div class="field">
+    <%= f.label :ai_persona_direccion, "Dirección:" %>
+    <%= f.text_field :ai_persona_direccion, :class => "full" %>
+  </div>
+  <div class="field doble radio-field">
+    <%= f.label :ai_embargos, "Embargo" %>
+    <div class="radio">
+      <%= f.radio_button :ai_embargos, true, :class => "inline" %>
+      <%= f.label :ai_embargos_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ai_embargos, false, :class => "inline" %>
+      <%= f.label :ai_embargos_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble radio-field">
+    <%= f.label :ai_intestado, "Intestado" %>
+    <div class="radio">
+      <%= f.radio_button :ai_intestado, true, :class => "inline" %>
+      <%= f.label :ai_intestado_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ai_intestado, false, :class => "inline" %>
+      <%= f.label :ai_intestado_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble radio-field">
+    <%= f.label :ai_patrimonio, "Patrimoio Familiar" %>
+    <div class="radio">
+      <%= f.radio_button :ai_patrimonio, true, :class => "inline" %>
+      <%= f.label :ai_patrimonio_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ai_patrimonio, false, :class => "inline" %>
+      <%= f.label :ai_patrimonio_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble radio-field">
+    <%= f.label :ai_usufructo, "Usufructo" %>
+    <div class="radio">
+      <%= f.radio_button :ai_usufructo, true, :class => "inline" %>
+      <%= f.label :ai_usufructo_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ai_usufructo, false, :class => "inline" %>
+      <%= f.label :ai_usufructo_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble radio-field">
+    <%= f.label :ai_inmobilizacion, "Inmobilización de la finca" %>
+    <div class="radio">
+      <%= f.radio_button :ai_inmobilizacion, true, :class => "inline" %>
+      <%= f.label :ai_inmobilizacion_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ai_inmobilizacion, false, :class => "inline" %>
+      <%= f.label :ai_inmobilizacion_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field doble radio-field">
+    <%= f.label :ai_identificacion, "Identificación del nombre" %>
+    <div class="radio">
+      <%= f.radio_button :ai_identificacion, true, :class => "inline" %>
+      <%= f.label :ai_identificacion_true, raw("Si <span></span>") %>
+    </div>
+    <div class="radio">
+      <%= f.radio_button :ai_identificacion, false, :class => "inline" %>
+      <%= f.label :ai_identificacion_false, raw("No <span></span>") %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :ai_observaciones, "Otras Obsevaciones:" %>
+    <%= f.text_area :ai_observaciones, :class => "full" %>
+  </div>
+</fieldset>
