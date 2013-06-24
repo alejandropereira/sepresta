@@ -21,6 +21,7 @@ time, mark, audio, video {
     background:transparent;
 }
 
+
 body {
     line-height:1;
 }
@@ -1022,4 +1023,84 @@ footer{
 		text-align: center;
 	}
 }
+
+
+/*************************************************
+
+LOGIN STYLES
+
+*************************************************/
+html{
+  height: 100%;
+}
+
+body.login{
+	background: #fefefe url(/assets/login-bg.jpg) repeat;
+	box-shadow: inset 0px 0px 400px 0 rgba(0,0,0,0.6);
+	width: 100%;
+	min-height: 100%;
+	display: inline-block;
+}
+
+#login{
+	width: 500px;
+	background: #d4d4d4;
+	margin: 150px auto 0;
+	border-radius: 5px;
+	position: relative;
+	padding: 1px; 
+
+	h1{
+
+		.green{
+			display: block;
+			font-size: 20px;
+			color: #19622f;
+		}
+		font-size: 36px;
+		color: #cb7119;
+		font-family: 'Raleway', sans-serif;
+		padding: 40px 0 0 25px;
+		display: block;
+	}
+
+	.logo-img{
+		position: absolute;
+		top: -110px;
+		right: -35px;
+	}
+
+	fieldset{
+		margin-top: 15px;
+		background: #18602e;
+		padding: 40px 20px 20px;
+		border-radius: 0px 0px 5px 5px;
+
+		label{
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			font-size: 16px;
+		}
+
+		input[type=email], input[type=password]{
+			height: 40px;
+			width: 100%;
+			background: white;
+			border: none;
+			display: block;
+			border-radius: 5px;
+			margin-top: 12px; 
+			margin-bottom: 30px;
+			padding: 0 8px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+}
+
 
